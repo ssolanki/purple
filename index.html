@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+function getLocation()
+  {
+  if (navigator.geolocation)
+    {
+    navigator.geolocation.getCurrentPosition(showPosition);
+    }
+  else{x.innerHTML="Geolocation is not supported by this browser.";}
+  }
+function showPosition(position)
+  {
+	var x1 =  position.coords.latitude;
+	var y1 =  position.coords.longitude;
+	
+
+ window.location.href = "process.php?lat=" + x1 + "&lon=" + y1 ;
+
+  }
+    
+
+  
+</script>
+
+<body onload="getLocation();">
+
+</body>
+</html>
