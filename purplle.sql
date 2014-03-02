@@ -27,9 +27,9 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `store` (
-  `name` varchar(50) DEFAULT NULL,
+  `name` varchar(50) NOT NULL,
   `city` varchar(20) NOT NULL,
-  `type` varchar(1) DEFAULT NULL,
+  `type` varchar(1) NOT NULL,
   `location_lat` double NOT NULL,
   `location_lon` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
